@@ -1,0 +1,205 @@
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  z-index: 11;
+  position: absolute;
+  top: 5px;
+  text-shadow: -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red, 2px 2px 0 red;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/* policelights */
+.flashing-sides {
+  position: fixed;
+  top: 0;
+  width: 12vw;
+  max-width: 120px;
+  height: 100%;
+  animation: flash 0.1s infinite alternate;
+}
+
+/* left side */
+.left {
+  left: 0;
+}
+
+/* right side */
+.right {
+  right: 0;
+}
+/*HOPEFULY THIS COUNTS AS AN IMPORT? ;/*/
+@keyframes flash {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+
+#vehicleFrame {
+  position: absolute;
+  width: 90vw;
+  max-width: 450px;
+  height: 80vh;
+  max-height: 600px;
+  background-color: white;
+  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 100px rgba(0, 0, 255, 1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#driverSeat {
+  position: absolute;
+  border: 4px solid blue;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  transform: translate(-180%, -205%);
+}
+
+#driverSeat .emoji {
+  transform: rotate(180deg)
+  z-index: 100;
+}
+
+#passengerSeat {
+  position: absolute;
+  border: 4px solid blue;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+  top: 50%;
+  left: 70%; 
+  transform: translate(-10%, -205%); 
+}
+
+#rearPassengerSeat {
+  position: absolute;
+  border: 4px solid blue;
+  height: 100px;
+  width: 190px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: spacearound;
+  align-items: center
+  z-index: 100;
+  transform: translate(-45%, -10%);
+}
+
+#cageSeat{
+  position: absolute;
+  border: 4px solid red;
+  height: 100px;
+  width: 150px;
+  background-color: gray;
+  color: red;
+  text-align: center;
+  justify-content: center;
+  z-index: 100;
+  transform: translate(70%,-10%);
+  
+}
+
+#mDT{
+  position: absolute;
+  border: 2px solid yellow;
+  height: 50px;
+  width: 75px;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  justify-content: center;
+  z-index: 100;
+  transform: translate(25%, -310%) rotate(45deg);  
+}
+
+#buttons {
+  position: absolute;
+  border: 2px solid yellow;
+  height: 30px;
+  width: 50px; 
+  background-color: black;
+  color: yellow;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  z-index: 100;
+  transform: translate(-55%, -420%) rotate(45deg);
+}
+
+#trunk{
+  position: absolute;
+  border: 6px solid yellow;
+  color: yellow;
+  height: 200px;
+  width: 400px;
+  background-color: black;
+  z-index: 99;
+  text-align: center;
+  transform: translate(0%, 80%);
+}
+
+#dashboard {
+  position: absolute;
+  border: 2px solid black;
+  color: yellow;
+  height: 30px;
+  width: 400px;
+  background-color: darkgrey;
+  z-index: 99;
+  text-align: center;
+  transform: translate(0%, -800%);
+}
+
+img {
+  border: 4px solid blue;
+  transform: translate(-135%, 0%);
+}
+
+#funFactBox {
+  width: 270px;
+  position: absolute;
+  text-align: center;
+  background-color: blue;
+  border: 3px solid yellow;
+  font-size: 18px;
+  font-weight: bold;
+  display: none; /* Start hidden */
+  transform: translate(160%, 0%);
+  z-index: 102
+}
