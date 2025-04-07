@@ -1,13 +1,5 @@
 On the sample project
 
-    Re-work the readme as a “handoff” to someone who may never have seen it before
-    include:
-        A code block with code syntax highlighting 
-        A code block with diff code syntax highlighting 
-        Use headers & sub-headers 
-        A quote 
-        Other markdown: lists, bold, emoticons
-
 @Author: RichieJY
 CSS Code: https://github.com/RichieJY/devBakerProject/blob/main/style.css
 ```css
